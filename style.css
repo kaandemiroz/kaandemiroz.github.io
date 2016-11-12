@@ -27,8 +27,24 @@ span {
     background-color: #FF5326;
 }
 
+div img {
+	margin: 5px;
+}
+
+div p {
+	margin: 5px;
+}
+
+.table {
+	background-color: #999;
+	border-radius: 10px;
+	margin: 15px 0px;
+	padding: 15px 5px 15px 15px;
+}
+
 .container {
     margin: auto;
-    max-width: 600px;
-    padding-top: 16%;
+    max-width: 40vw;
+	max-height: 50vh;
+    padding-top: 10vh;
 }
