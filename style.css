@@ -49,7 +49,7 @@ div p {
 body .container {
     margin: auto;
 	min-width: 225px;
-    max-width: 50vw;
+    max-width: 75vw;
 	max-height: 50vh;
     padding-top: 5vh;
 }
