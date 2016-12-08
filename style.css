@@ -1,16 +1,64 @@
 body {
+	font-family: Bree Serif;
+	background-color: #000;
     /*background-color: #000000;*/
 	/*font-family: Courier New,Courier,Lucida Sans Typewriter,Lucida Typewriter,monospace;*/
     /*color: #090;*/
 }
 
-h1, h2{
+body .fullscreen-bg {
+	position: fixed;
+    left: 33%;
+    top: 33%;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+	z-index: -100;
+}
+
+body .fullscreen-bg__video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50vw;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    -webkit-transform: translate(-50%, -50%);
+       -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+	    transform: translate(-50%, -50%);
+}
+
+@media (max-width: 767px) {
+    .fullscreen-bg {
+        background: url("images/RubiksCubeImage.png") center center / cover no-repeat;
+		background-size: 55vw;
+    }
+
+    .fullscreen-bg__video {
+        display: none;
+    }
+}
+
+h1{
     font-weight: bold;
-	/*color: #0f0;*/
+	font-size: 8vw;
+	color: #ccc;
+}
+
+h2{
+    font-weight: bold;
+	font-size: 5vw;
+}
+
+h3{
+    font-weight: bold;
+	font-size: 1.5vw;
 }
 
 p {
-    font-size: 110%
+    font-size: 110%;
 }
 
 a {
@@ -19,8 +67,17 @@ a {
 	text-decoration: none;
 }
 
-a.link:hover {
-	text-decoration: underline;
+a:hover {
+	text-decoration: none;
+	color:a.color;
+}
+
+h1 a {
+	color:inherit;
+}
+
+h1 a:hover {
+	color:inherit;
 }
 
 span {
