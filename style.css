@@ -32,7 +32,7 @@ body .fullscreen-bg__video {
 
 @media (max-width: 767px) {
     .fullscreen-bg {
-        background: url("images/RubiksCubeImage.png") center center / cover no-repeat;
+        background: url("assets/img/RubiksCubeImage.png") center center / cover no-repeat;
 		background-size: calc(24vw + 48vh);
     }
 
